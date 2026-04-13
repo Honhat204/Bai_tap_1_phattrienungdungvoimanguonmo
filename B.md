@@ -87,3 +87,31 @@ Cài Docker Compose : sudo apt update sudo apt install docker-compose-v2 -y
 Kiểm tra Docker : docker --version
 
 Kiểm tra Docker : docker --version
+ảnh
+Kiểm tra phiên bản Docker compose :
+<img width="997" height="91" alt="Ảnh chụp màn hình 2026-04-13 213148" src="https://github.com/user-attachments/assets/89cb01d5-de08-4027-9b9c-9375917e69be" />
+ 5. Cấu hình để docker chạy mà không cần tiền tố sudo
+ BƯỚC 1: Thêm user vào nhóm docker
+sudo usermod -aG docker $USER
+BƯỚC 2: Áp dụng thay đổi
+newgrp docker
+BƯỚC 3: TEST
+docker run hello-world
+KẾT QUẢ:
+đã cấu hình để Docker có thể chạy mà không cần sử dụng sudo bằng cách thêm user vào nhóm docker và áp dụng thay đổi. Sau đó, kiểm tra và chạy container thành công mà không cần sudo.
+<img width="1353" height="761" alt="Ảnh chụp màn hình 2026-04-13 212212" src="https://github.com/user-attachments/assets/7c83edd0-b372-4c33-a229-b9c97f9a1797" />
+6. Tìm hiểu tập lệnh của docker và docker compose
+A. Docker
+Xem container đang chạy
+docker ps
+<img width="969" height="107" alt="Ảnh chụp màn hình 2026-04-13 212422" src="https://github.com/user-attachments/assets/f57e2539-8b7d-4b81-ba83-17e87c72f265" />
+Xem tất cả container
+docker ps -a
+<img width="1903" height="155" alt="Ảnh chụp màn hình 2026-04-13 221534" src="https://github.com/user-attachments/assets/f22c0ce8-70a5-4edc-8a8b-e40d7cd7ab4f" />
+Chạy container
+docker run hello-world
+<img width="1353" height="761" alt="Ảnh chụp màn hình 2026-04-13 212212" src="https://github.com/user-attachments/assets/b97782cf-a63b-4981-89f1-456b096a529c" />
+Xóa container
+docker rm ID_container
+Xem image
+docker images
