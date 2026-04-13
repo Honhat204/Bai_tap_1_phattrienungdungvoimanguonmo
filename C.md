@@ -36,3 +36,4 @@ gõ: nano docker-compose.yml để tạo file
 tạo thư mục Nginx và nodered ( vì máy chưa có)
 mkdir nginx
 mkdir nodered
+n
