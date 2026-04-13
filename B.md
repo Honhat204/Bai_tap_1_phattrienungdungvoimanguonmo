@@ -72,4 +72,16 @@ cấu hình SSH trên Ubuntu và sử dụng lệnh ssh từ máy Windows để 
 - BƯỚC 3:
 > - Bật Docker : sudo systemctl start docker
 > - Cho Docker tự chạy khi bật máy: sudo systemctl enable docker
+BƯỚC 4 : Test Docker : sudo docker run hello-world
 
+<img width="1353" height="761" alt="Ảnh chụp màn hình 2026-04-13 212212" src="https://github.com/user-attachments/assets/84db64c2-0d16-4fb6-b656-8cbcfb470115" />
+
+=> đã cài đặt Docker trên Ubuntu bằng lệnh apt install docker.io, sau đó khởi động dịch vụ Docker và cấu hình để Docker tự động chạy khi khởi động hệ thống. Cuối cùng, kiểm tra bằng lệnh docker run hello-world và nhận được kết quả thành công.
+
+B. Cài Docker Compose
+Cài Docker Compose : sudo apt update sudo apt install docker-compose-v2 -y
+
+<img width="1920" height="1080" alt="Ảnh chụp màn hình 2026-04-13 110122" src="https://github.com/user-attachments/assets/2361402c-1b3d-4c94-8a6a-712438fd7b33" />
+
+4. Kiểm tra phiên bản docker vừa cài đặt, kiểm tra phiên bản của docker compose
+Kiểm tra Docker : docker --version
