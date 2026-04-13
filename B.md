@@ -85,3 +85,5 @@ Cài Docker Compose : sudo apt update sudo apt install docker-compose-v2 -y
 
 4. Kiểm tra phiên bản docker vừa cài đặt, kiểm tra phiên bản của docker compose
 Kiểm tra Docker : docker --version
+
+Kiểm tra Docker : docker --version
