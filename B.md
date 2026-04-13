@@ -115,3 +115,5 @@ Xóa container
 docker rm ID_container
 Xem image
 docker images
+7. Đảm bảo tường lửa trên Ubuntu đã cho phép các cổng 80, 1880, 9630 (Lệnh: sudo ufw allow ...)
+<img width="903" height="666" alt="Ảnh chụp màn hình 2026-04-13 213501" src="https://github.com/user-attachments/assets/d1a9c05a-13f6-4876-8146-ed25e013e04a" />
